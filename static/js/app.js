@@ -104,11 +104,12 @@ function optionChanged() {
       }
 
   var barLayout = {
-      margin: {
-          l: 100,
-          r: 100,
-          t: 30,
-          b: 20
+    title: 'Top OTUs',
+    margin: {
+        l: 100,
+        r: 100,
+        t: 30,
+        b: 20
       }
   };
   Plotly.restyle("bar", bartrace, barLayout);
