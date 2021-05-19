@@ -137,6 +137,15 @@ function optionChanged() {
       height: 600,
       width: 1200
       };
-  Plotly.restyle("bubble", bubTrace, bubLayout);
+Plotly.restyle("bubble", bubTrace, bubLayout);
 
-})};
+// New variables on change for metadata & demos
+var sampleMetadata2 = data.metadata.filter(sample => sample.id.toString() === newValue)[0];
+var demographics2 = d3.select("#sample-metadata");
+
+console.log(sampleMetadata2)
+Object.entries(sampleMetadata2).forEach(([key, value]) => {
+    demographics2.append("p")
+    .text(`${key}: ${value}`);
+      })
+  })};
