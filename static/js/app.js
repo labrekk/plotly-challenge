@@ -24,15 +24,14 @@ function init() {
       type: "bar",
       orientation: "h",
       text: otuLabels
-      };
+      }
   
   var bar_layout = {
       title: 'Top OTUs'
-      }
-  ;
+      };
 
   // Plot the iniital bar chart rendering
-  Plotly.newPlot("bar", trace, bar_layout);
+  Plotly.newPlot("bar", [trace], bar_layout);
 
   // bubble chart
   var samplevaluesBubble = incomingData.samples[0].sample_values
@@ -70,10 +69,6 @@ function init() {
 })};
 
 init();
-
-
-
-// 
 
 // Call optionChanged() when a change takes place to the DOM
 d3.selectAll("#selDataset").on("change", optionChanged);
