@@ -26,11 +26,17 @@ function init() {
       text: otuLabels
     }
     var bar_layout = {
-      title: 'Top Belly Button Bacteria'
+      title: 'Top Belly Button OTUs'
     }
     };
   
     // bar chart
     Plotly.newPlot('bar', trace, bar_layout);
-    
+
+
+    // ///////////////////////////////////////
+
+    // Bubble
+
+
     };
