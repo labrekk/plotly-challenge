@@ -24,7 +24,7 @@ function init() {
       type: "bar",
       orientation: "h",
       text: otuLabels
-      }
+      };
   
   var bar_layout = {
       title: 'Top OTUs'
@@ -32,7 +32,7 @@ function init() {
   });
 
   // Plot the iniital bar chart rendering
-  Plotly.newPlot("bar", [trace], bar_layout);
+  Plotly.newPlot("bar", trace, bar_layout);
 
 
 
