@@ -37,6 +37,19 @@ function init() {
     // ///////////////////////////////////////
 
     // Bubble
-
-
+    
+    var trace2 = {
+      x: otu_ids,
+      y: sampleValues,
+      text: otuLabels,
+      mode: 'markers',
+      marker: {
+        color: otu_ids,
+        size: sampleValues
+      }
+    }
+    var bub_layout = {
+      title: 'BB Samples',
+    }
+    Plotly.newPlot('bubble', trace2, bub_layout)
     };
