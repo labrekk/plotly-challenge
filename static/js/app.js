@@ -29,13 +29,10 @@ function init() {
   var bar_layout = {
       title: 'Top OTUs'
       }
-  });
+  ;
 
   // Plot the iniital bar chart rendering
   Plotly.newPlot("bar", trace, bar_layout);
-
-
-
 
   // bubble chart
   var samplevaluesBubble = incomingData.samples[0].sample_values
@@ -70,7 +67,7 @@ function init() {
       .text(`${key}: ${value}`);
   })
 
-};
+})};
 
 init();
 
